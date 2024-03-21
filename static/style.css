@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'yekan';
+    src: url('./yekan.woff');
+}
+*{
+    margin:0;
+    padding:0;
+}body{
+    background-image: linear-gradient(to left, #11d1e6, #f4ff60);
+ }
+#uploadFiles{
+    max-width: 1080px;
+    /*background-color: #e5e5e5;*/
+    border-radius:8px;
+    padding:20px;
+    margin:20vh auto;
+    margin-bottom:5vh;
+}
+.text-upload{
+    text-align:center;
+    margin:15vh 0 ;
+    font-size:5rem;
+}.input-file{
+    width: 90%;
+    background-color: #1e333b;
+    color:white;
+    padding:8px 5px;
+    padding-top:10px;
+    border-radius: 8px 0px 0px 8px;
+
+ }.btn-upload{
+    width: 8.7%;
+    margin-left:-5px;
+    padding:10.6px 0;
+    border-radius: 0px 8px 8px 0px;
+    border:none;
+    background: #ffef00;
+    color: #414141;
+    font-size:1rem;
+    cursor:pointer;
+    transition:all 0.2s;
+    font-weight: 600;
+   }.btn-upload:hover{
+    background: #bbbb1c;
+     }
+     .progress{
+        width: 100%;
+        /* border: 2px solid rgb(255, 255, 255); */
+        background-color: rgb(48, 48, 48);
+        
+        height:30px;
+        direction: rtl;
+        border-radius: 5px;
+     }
+     .progress-result{
+        margin:10px 0;
+        font-family: yekan;
+     }
+     .progress-result-number{
+        font-size: 1.6rem;
+        color:rgb(4, 103, 128);
+     }
+     .progress-bar{
+        width: 0%;
+        height: 100%;
+        background-color: rgb(103, 237, 255);
+     }
+  @media screen and (max-width:768px) {
+      .input-file{
+          width: 81%;
+          padding-bottom: 9.7px;
+
+
+      }
+      .btn-upload{
+          width: 16%;
+          margin-left:-5px;
+          padding:12px 0;
+            font-size:0.9rem
+
+      }
+  }
+.text-upload span{
+    animation: ani 2s infinite;
+}
+.text-upload span:nth-child(1){
+
+
+}.text-upload span:nth-child(2){
+
+     animation-delay: -1.8s;
+}.text-upload span:nth-child(3){
+
+     animation-delay: -1.6s;
+}.text-upload span:nth-child(4){
+
+     animation-delay: -1.4s;
+}.text-upload span:nth-child(5){
+
+     animation-delay: -1.2s;
+}.text-upload span:nth-child(6){
+
+     animation-delay: -1s;
+}.text-upload span:nth-child(7){
+
+     animation-delay: -0.8s;
+}.text-upload span:nth-child(8){
+
+     animation-delay: -0.6s;
+}.text-upload span:nth-child(9){
+
+     animation-delay: -0.4s;
+}.text-upload span:nth-child(10){
+
+     animation-delay: -0.2s;
+}.text-upload span:nth-child(11){
+
+     animation-delay: -0.01s;
+}
+@keyframes ani {
+    0%{
+        color:black;
+    }100%{
+    color: #ffd230;
+         }
+}
+.load-div{
+    opacity: 0;
+    max-width: 800px;
+    margin:0 auto;
+    text-align: center;
+}
+.circle{
+    border:3px solid #1E333BFF;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin:10px auto;
+    padding:0;
+}
+.load{
+    width:100%;
+    height:100%;
+    box-shadow: 2px 0px 0px 0px #f8d300;
+    border-radius:100%;
+    animation:load 1s linear infinite;
+    margin:0;
+    padding:0;
+}
+#p1{
+
+    font-family: Arial;
+    text-align: center;
+    font-size:1rem;
+    font-weight:600;
+    color:#1E333BFF;
+}
+@keyframes load{
+    from{transform: rotate(360deg)}
+}
